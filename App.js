@@ -1,20 +1,53 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { StyleSheet, TextInput, View, SafeAreaView, StatusBar } from 'react-native';
+import Contact from './components/Contact';
+
 
 export default function App() {
+  const [searchText, setSearchText] = useState('');
+
+  
+  const handleSearch = (text) => {
+    setSearchText(text);
+  };
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.safeView}>
+      <StatusBar
+        animated={true}
+        backgroundColor="#a3c4f3"
+        
+      />
+      <View style={styles.container}>
+        <TextInput
+          style={styles.input}
+          placeholder="Search Contact"
+          value={searchText}
+          onChangeText={handleSearch}
+          placeholderTextColor="#888"
+        />
+      </View>
+      <Contact searchText={searchText}/>
+    </SafeAreaView>
+ 
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  safeView:{
+    flex:1
   },
+  container: {
+    backgroundColor: '#f0f0f0',
+    borderRadius: 20,
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    marginHorizontal: 10,
+    marginVertical: 10,
+  },
+  input: {
+    fontSize: 16,
+    color: '#333',
+  },
+
 });
