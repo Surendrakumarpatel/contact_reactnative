@@ -48,12 +48,6 @@ Contact Page is a simple React Native application that displays a list of contac
 - Display a list of contacts with avatars, names, and phone numbers
 - Search functionality to filter contacts by name
 - Click on a contact to view their name and phone number in a dismissable popup
-
-## Screenshots
-
-Include screenshots of our application in action. 
-
-![Contact Page Screenshot](./screenshots/contact-page.png)
  
 ### Prerequisites
 
