@@ -1,6 +1,9 @@
 # Contact Mobile App in React Native
 
 [Download App Link](https://expo.dev/accounts/kmr/projects/ContactsProject/builds/9d16af8c-b0ad-4a3e-891e-d1a9a2123957)
+or
+[Download APK](https://drive.google.com/file/d/1WTYDiRTyMJZ61sSLRkR2AR1R9dVQbbaV/view?usp=sharing)
+
 
 ## Components I used:-
 1. Contact.js ( inside components folder )
